@@ -1,0 +1,26 @@
+@import '@styles/variables';
+.section {
+  padding-inline: 15px;
+  margin-top: 30px;
+  max-width: 1280px;
+  margin-inline: auto;
+
+  &__title {
+    color: $dark;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+.community-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .community-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
